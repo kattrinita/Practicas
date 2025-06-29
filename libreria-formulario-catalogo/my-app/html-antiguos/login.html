@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registración</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="login">
+    <div id="contenedor-login">
+        <form id="form-contacto" class="form-contacto">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            </div>
+
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required />
+            </div>
+
+            <div class="form-group">
+                <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required />
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com" required />
+            </div>
+
+            <div class="form-group">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Tu contraseña" required />
+            </div>
+
+            <div class="form-group">
+                <label>Sexo:</label>
+                <div>
+                    <input type="radio" id="masculino" name="sexo" value="masculino" required />
+                    <label for="masculino">Masculino</label>
+                </div>
+                <div>
+                    <input type="radio" id="femenino" name="sexo" value="femenino" required />
+                    <label for="femenino">Femenino</label>
+                </div>
+                <div>
+                    <input type="radio" id="otro" name="sexo" value="otro" required />
+                    <label for="otro">Otro</label>
+                </div>
+            </div>
+                <div class="form-group">
+                <label for="tema favorito">Tema Favorito:</label>
+                <input type="text" id="favorito" name="tema favorito" placeholder="ejemplo: ficción" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">submit</button>
+        </form>
+    </div>
+</body>
+</html>
